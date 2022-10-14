@@ -1,0 +1,13 @@
+﻿@model ToDoListTable 
+
+
+
+<form  method="post" asp-action="Edit"  asp-controller="List"  >
+    <div>
+    <label asp-for="TaskContent"> Task :  </label>
+    <input type="text" asp-for="TaskContent" />
+    <input hidden asp-for="TaskId" />
+    <button style="margin-left:10px;" > Edit Task  </button>
+    </div>
+    
+</form>
